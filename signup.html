@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="login-container">
+
+        <h2>Sign up</h2>
+        <form action="index.html" method="get">
+            <div class="profileouter">
+                
+                <div class="file-upload">
+                    <input type="file" id="profilepic" name="profilepic" style="display: none;">
+                    <div class="hover-message">Upload a clear JPG or PNG image.</div>
+                </div><br><br>
+                <label for="profilepic" class="profile"><i class="fa-solid fa-user"></i></label>
+            </div>
+            <input type="text"  placeholder="Username" required>
+            <input type="email"  placeholder="Email" required>
+            <input type="password"  placeholder="Password" required>
+            <input type="password" placeholder="Confirm password" required>
+            <input type="text"  placeholder="Contact number: 92345*****" required>
+            <input type="date">
+            <div class="Terms-me">
+                <input type="checkbox">
+                <label for="Terms">Accept Terms&conditions</label>
+            </div>
+            <br>
+
+
+            <button type="submit" >Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>
