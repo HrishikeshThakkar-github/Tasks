@@ -88,3 +88,35 @@ h2 {
     justify-content: center ;
 }
 
+.profile {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid black;
+    position: relative; /* Needed for tooltip positioning */
+}
+ 
+.tooltip {
+    position: absolute;
+    bottom: -30px; /* Position below the circle */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+ 
+.profile:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
